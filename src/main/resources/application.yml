@@ -1,0 +1,55 @@
+---
+# default properties that will be applied with all profiles.
+spring:
+  profiles:
+    active: dev
+  application:
+    name: csv-parser
+  security:
+    user:
+      name: csv
+      password: csv
+  jackson:
+    serialization:
+      indent_output: true
+---
+server:
+  port: 8080
+  tomcat:
+    max-threads: 50
+---
+executor:
+  defaultPoolSize: 10
+  maxPoolSize: 50
+---
+info:
+  app:
+    description: CSV Parser
+    name: ${spring.application.name}
+    port: ${server.port}
+    version: 0.1
+---
+management:
+  endpoint:
+    restart:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+---
+logPath: ${HOME}/logs
+---
+kafka:
+  bootstrap-servers: localhost:9092
+  group-id: csv-1
+  topic:
+    largerThan1000Topic: kafkaLargerThan1000Topic
+    lessThan1000Topic: kafkaLessThan1000Topic
+    errorTopic: kafkaErrorTopic
+  result:
+    largerThan1000FilePath: ${HOME}/CSV_LARGER_1000.csv
+    lessThan1000FilePath: ${HOME}/CSV_LESS_1000.csv
+    errorFilePath: ${HOME}/CSV_ERROR.csv

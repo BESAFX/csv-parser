@@ -1,0 +1,12 @@
+   _|_|_|     _|_|_|   _|      _|       _|_|_|       _|_|     _|_|_|       _|_|_|   _|_|_|_|   _|_|_|
+ _|         _|         _|      _|       _|    _|   _|    _|   _|    _|   _|         _|         _|    _|
+ _|           _|_|     _|      _|       _|_|_|     _|_|_|_|   _|_|_|       _|_|     _|_|_|     _|_|_|
+ _|               _|     _|  _|         _|         _|    _|   _|    _|         _|   _|         _|    _|
+   _|_|_|   _|_|_|         _|           _|         _|    _|   _|    _|   _|_|_|     _|_|_|_|   _|    _|   version 0.1
+
+Author: BASSAM ALMAHDY © 2022 (CSV PARSER)
+
+You can edit this banner using this link:
+https://devops.datenkollektiv.de/banner.txt/index.html
+
+
