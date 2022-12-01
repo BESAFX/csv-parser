@@ -17,11 +17,9 @@
 
     <properties>
         <java.version>11</java.version>
-        <joda-time.version>2.10.6</joda-time.version>
         <commons-io.version>2.6</commons-io.version>
         <com.google.guava.version>27.0.1-jre</com.google.guava.version>
         <commons-lang3>3.8.1</commons-lang3>
-        <org.modelmapper.version>2.3.8</org.modelmapper.version>
     </properties>
 
     <dependencies>
@@ -53,18 +51,9 @@
 
         <!-- Utils -->
         <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>${joda-time.version}</version>
-        </dependency>
-        <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -75,13 +64,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3}</version>
-        </dependency>
-
-        <!-- Mapping DTO (Converting POJO <=> DTO) -->
-        <dependency>
-            <groupId>org.modelmapper</groupId>
-            <artifactId>modelmapper</artifactId>
-            <version>${org.modelmapper.version}</version>
         </dependency>
 
     </dependencies>
